@@ -1,0 +1,39 @@
+body {
+  margin: 0px;
+  background-color: #eee;
+  color: #069;
+  font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+  padding: 10px 0px;
+}
+
+.app-main-header {
+  background-color: #069;
+  color: #fff;
+}
+
+.app-main-viewport {
+  background: #fff;
+}
+
+.app-main-view  h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.app-log {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  width: 30%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.app-log pre {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ff0;
+}

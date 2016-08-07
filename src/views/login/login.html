@@ -1,0 +1,21 @@
+<div class="view-login">
+  <h1>Login</h1>
+
+  <form ng-submit="login()">
+    <div class="view-login-control">
+      <label>Email</label>
+      <input ng-model="user.email">
+    </div>
+
+    <div class="view-login-control">
+      <label>Password</label>
+      <input type="password" ng-model="user.password">
+    </div>
+
+    <div class="view-login-control">
+      <label></label>
+      <button type="submit">Login</button>
+      <button type="button" ng-click="signup()">Create account</button>
+    </div>
+  </form>
+</div>

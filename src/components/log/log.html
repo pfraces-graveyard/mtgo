@@ -1,0 +1,7 @@
+<div class="app-log" ng-if="showLog()" ng-mouseenter="showActions = true" ng-mouseleave="showActions = false">
+  <div ngl-log></div>
+
+  <div ng-if="showActions" class="app-log-actions">
+    <button ng-click="clearLog()">Clear</button>
+  </div>
+</div>

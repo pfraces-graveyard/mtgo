@@ -1,0 +1,10 @@
+.app-log-actions {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  text-align: right;
+}
+
+.app-log-actions  button {
+  margin: 20px;
+}

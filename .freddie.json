@@ -1,0 +1,11 @@
+[
+  {
+    "name": "mtgo",
+    "port": 3000,
+    "root": "dist",
+    "notfound": {
+      "path": "dist/index.html",
+      "status": 200
+    }
+  }
+]

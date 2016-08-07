@@ -1,0 +1,24 @@
+{
+  "name": "mtgo",
+  "description": "",
+  "version": "",
+  "repository": "",
+  "license": "",
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-eslint": "*",
+    "gulp-concat-sourcemap": "*",
+    "gulp-angular-templatecache": "*",
+    "del": "*",
+    "bower": "*",
+    "freddie": "*"
+  },
+  "scripts": {
+    "install": "bower install",
+    "update": "bower update",
+    "lint":"gulp lint",
+    "test":"gulp test",
+    "build" : "gulp build",
+    "start": "npm run build && freddie"
+  }
+}

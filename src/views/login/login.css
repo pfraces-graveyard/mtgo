@@ -1,0 +1,8 @@
+.view-login label {
+  display: inline-block;
+  width: 100px;
+}
+
+.view-login-control {
+  margin: 10px;
+}

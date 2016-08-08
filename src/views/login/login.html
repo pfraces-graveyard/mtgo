@@ -1,7 +1,7 @@
 <div class="view-login">
   <h1>Login</h1>
 
-  <form ng-submit="login()">
+  <form ng-submit="login(user)">
     <div class="view-login-control">
       <label>Email</label>
       <input ng-model="user.email">
@@ -15,7 +15,7 @@
     <div class="view-login-control">
       <label></label>
       <button type="submit">Login</button>
-      <button type="button" ng-click="signup()">Create account</button>
+      <button type="button" ng-click="signup(user)">Create account</button>
     </div>
   </form>
 </div>

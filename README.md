@@ -3,13 +3,19 @@ mtgo
 
 Magic The Gathering Online
 
+  * <https://console.firebase.google.com/project/mtgo-6aa5b/database/data/>
+
+Features
+--------
+
+  * Email/Password authentication
+
 WIP
 ---
 
-### Login/Signup
+### Decks
 
-  * firebase email auth
-  * show errors
+  * firebase CRUDs
 
 ### Rooms
 

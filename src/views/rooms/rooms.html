@@ -1,0 +1,9 @@
+<div class="view-rooms">
+  <h1>Rooms</h1>
+
+  <ul>
+    <li ng-repeat="room in rooms"><a ui-sref="rooms.detail({ id: room.id })">{{ room.name }}</a></li>
+  </ul>
+
+  <a ui-sref="rooms.new">Create Room</a>
+</div>

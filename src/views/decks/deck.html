@@ -1,0 +1,14 @@
+<div class="view-deck">
+  <h1>{{ deck.name || 'Create Deck' }}</h1>
+
+  <form ng-submit="save(deck)">
+    <div ng-if="isNew" class="view-deck-control">
+      <label>Name</label>
+      <input ng-model="deck.name">
+    </div>
+
+    <div ng-if="isNew" class="view-deck-control">
+      <button type="submit">Save</button>
+    </div>
+  </form>
+</div>

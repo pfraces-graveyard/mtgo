@@ -1,0 +1,8 @@
+.view-deck label {
+  display: inline-block;
+  width: 100px;
+}
+
+.view-deck-control {
+  margin: 10px;
+}

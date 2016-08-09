@@ -1,8 +1,8 @@
 angular.module('view.login', [
-  'ui.router',    // $state
-  'ngl.log',      // nglLog
-  'app.firebase', // appFirebase
-  'app.user'      // appUser
+  'ui.router', // $state
+  'ngl.log',   // nglLog
+  'app.auth',  // appAuth
+  'app.user'   // appUser
 ])
 
 .directive('viewLogin', function ($injector) {
@@ -10,7 +10,7 @@ angular.module('view.login', [
 
   var $state = $injector.get('$state');
   var nglLog = $injector.get('nglLog');
-  var appFirebase = $injector.get('appFirebase');
+  var appAuth = $injector.get('appAuth');
   var appUser = $injector.get('appUser');
 
   var authenticate = function (user) {
@@ -19,13 +19,13 @@ angular.module('view.login', [
   };
 
   var login = function (user) {
-    appFirebase.signInWithEmailAndPassword(user.email, user.password)
+    appAuth.login(user.email, user.password)
     .then(authenticate.bind(null, user))
     .catch(nglLog);
   };
 
   var signup = function (user) {
-    appFirebase.createUserWithEmailAndPassword(user.email, user.password)
+    appAuth.signup(user.email, user.password)
     .then(authenticate.bind(null, user))
     .catch(nglLog);
   };

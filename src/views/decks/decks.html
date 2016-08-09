@@ -1,0 +1,9 @@
+<div class="view-decks">
+  <h1>Decks</h1>
+
+  <ul>
+    <li ng-repeat="(id, deck) in decks"><a ui-sref="decks.detail({ id: id })">{{ deck.name }}</a></li>
+  </ul>
+
+  <a ui-sref="decks.new">Create Deck</a>
+</div>
